@@ -11,3 +11,13 @@ Procedure I_Fibonacci(n):
         display fib
     END for loop
 END Iterative_Fibonacci
+
+#Recursive
+Procedure R_Fibonacci(n)
+    int f0, f1
+    f0 := 0
+    f1 := 1
+    if(n <= 1):
+        return n
+    return Recursive_Fibonacci(n-1) + Recursive_Fibonacci(n-2)
+END Recursive_Fibonacci
